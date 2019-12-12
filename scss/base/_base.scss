@@ -1,0 +1,60 @@
+body {
+  font-family: 'Lato';
+  font-weight: 300;
+  color: $body-text-color;
+  font-size: 1em;
+  background: url('../img/landing-red-shape.svg') no-repeat;
+  background-size: 70% 90vh;
+	@include media-breakpoint-up(xl) { 
+		font-size: 1.2em;
+	}
+}
+
+a {
+  color: $link-text-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $title-text-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  &.center {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 2em;
+  color: $title-secondary-color;
+}
+
+h4 {
+  color: $title-secondary-color;
+}
+
+.container {
+  margin: auto;
+	@include media-breakpoint-up(xxl) { 
+		max-width: 1440px;
+	}
+}
+
+p {
+  &.center {
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+  }
+}

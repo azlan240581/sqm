@@ -1,0 +1,30 @@
+@media print { 
+	.content-header > .breadcrumb { display:none !important; }
+	a[href]:after { content: none !important; }
+	.btn, .summary, footer, .filters  { display:none !important; }
+	.action-column tr td:last-child,.action-column tr th:last-child{ display: none !important; }
+
+	.header-options { display:none !important; }
+	.content-options { display:none !important; }
+	
+	.box {page-break-after: always;}
+	
+	ol { max-height:none !important; overflow:hidden !important; display:'' !important; }
+	
+	.topupCredits > .btn { display: '' !important; }
+	
+	ul.pagination { display:none !important; }
+	
+	.btn.btn-success.btn-sm { display:block !important; }
+	
+	#divOverflow { max-height:none !important; overflow:hidden !important; display:'' !important; }
+	
+	.catalog-products-index thead,tbody { font-size:10px !important; }
+	@page { 
+		size: landscape;
+	}
+}
+
+.btn { margin-right:5px; }
+.btn-sm { margin-right:0 !important; }
+.btn-excel { display:none; }

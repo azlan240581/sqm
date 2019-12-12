@@ -1,0 +1,17 @@
+// Vendors
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Base
+@import "base/variables";
+@import "base/fonts";
+@import "base/base";
+
+
+// Placeholders 
+@import "placeholders/large-bg-box";
+@import "placeholders/side-grey-bg";
+
+//Components
+@import "components/home";
+@import "components/footer";
+@import "components/nav";

@@ -1,0 +1,48 @@
+footer {
+  background-color: $footer-top-bg;
+  color: $body-text-color-on-dark;
+  padding-top: 4em;
+
+  a {
+    color: $footer-link;
+    &:hover {
+      color: $footer-link-hover;
+    }
+  }
+
+  ul.contact-details {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      padding-left: 2em;
+      position: relative;
+      &:after {
+        content: "";
+        left: 0.5em;
+        bottom: 0.2em;
+        height: 1em;
+        width: 1em;
+        position: absolute;
+      }
+      &.address {
+        &:after {
+          background: url('../img/icons/footer-location.svg') no-repeat;
+        }
+      }
+      &.email {
+        &:after {
+          background: url('../img/icons/footer-email.svg') no-repeat;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: $footer-bottom-bg;
+    padding: 1em;
+    margin-top: 7em;
+    font-size: 0.85em;
+    text-align: center;
+  }
+}
